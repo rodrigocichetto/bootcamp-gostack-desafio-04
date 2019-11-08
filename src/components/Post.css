@@ -1,0 +1,36 @@
+.post {
+  min-width: 44rem;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+  background: #FFF;
+  box-shadow: 0 0 0.3rem -0.1rem rgba(0,0,0,0.4);
+}
+
+.post__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #4A4A4A;
+}
+
+.post__profile img {
+  margin-right: 0.5rem;
+}
+
+.post__profile small {
+  color: #9A9A9A;
+}
+
+.post__content {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: #3E3E3E;
+}
+
+.post__comments {
+  margin: 1rem 0 0;
+  border: 0.05rem solid #eee;
+}
+
