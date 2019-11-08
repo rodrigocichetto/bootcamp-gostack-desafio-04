@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Comment from './Comment';
+
 import './Post.css';
 
 const Post = ({ data: post }) => (
   <div className="post">
     <div className="post__profile">
-      <img src={post.author.avatar} />
+      <img className="avatar" src={post.author.avatar} />
       <div>
         {post.author.name} <br /> <small>{post.date}</small>
       </div>
@@ -15,7 +17,7 @@ const Post = ({ data: post }) => (
     </div>
     { post.comments.length > 0 && 
       <div className="post__comments">
-      {/* {data.comments.map(comment => <Comment key={comment.id} data={comment} />)} */}
+        {post.comments.map(comment => <Comment key={comment.id} data={comment} />)}
       </div>
     }
     
