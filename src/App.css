@@ -1,6 +1,8 @@
 .app {
   background: #F2F2F2;
   min-height: 100vh;
+  display: table;
+  width: 100%;
 }
 
 .avatar {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Comment.css';
 
@@ -8,5 +9,9 @@ const Comment = ({ data: comment }) => (
     <p className="comment__content"><strong>{comment.author.name}</strong> {comment.content}</p>
   </div>
 );
+
+Comment.propTypes = {
+  data: PropTypes.object.isRequired
+};
 
 export default Comment;

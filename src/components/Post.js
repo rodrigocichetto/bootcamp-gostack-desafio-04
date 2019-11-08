@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Comment from './Comment';
 
@@ -23,5 +24,9 @@ const Post = ({ data: post }) => (
     
   </div>
 );
+
+Post.propTypes = {
+  data: PropTypes.object.isRequired
+};
 
 export default Post;
